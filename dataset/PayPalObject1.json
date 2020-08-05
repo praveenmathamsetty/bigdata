@@ -1,0 +1,8 @@
+{
+	"name": "PayPalObject1",
+	"properties": {
+		"annotations": [],
+		"type": "PayPalObject",
+		"schema": []
+	}
+}
