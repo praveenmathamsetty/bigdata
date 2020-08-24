@@ -24,6 +24,6 @@ steps:
     SourcePath: '$(agent.builddirectory)\*'
     azureSubscription: 'Synapse_BLR_Team_DevTest_01(16620d54-d71c-4d22-910b-e711ca35efc6)'
     Destination: 'AzureBlob'
-    storage: 'praveensgnew'
-    ContainerName: 'praveensgnew'
+    storage: 'praveensg2'
+    ContainerName: 'praveensg2'
     sasTokenTimeOutInMinutes: '1240'
