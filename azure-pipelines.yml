@@ -20,10 +20,10 @@ steps:
 
 - task: AzureFileCopy@4
   inputs:
-    SourcePath: '$(agent.builddirectory)\*.*'
+    SourcePath: '$(build.repository.localpath)'
     azureSubscription: 'Synapse_BLR_Team_DevTest_01(16620d54-d71c-4d22-910b-e711ca35efc6)'
     Destination: 'AzureBlob'
     storage: 'praveensg2'
     ContainerName: 'praveensg2'
-    AdditionalArgumentsForBlobCopy: '--log-level=DEBUG'
+    AdditionalArgumentsForBlobCopy: '--log-level=DEBUG --recursive'
     sasTokenTimeOutInMinutes: '2240'
