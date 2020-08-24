@@ -25,4 +25,4 @@ steps:
     Destination: 'AzureBlob'
     storage: 'praveensgnew'
     ContainerName: 'praveensgnew'
-    AdditionalArgumentsForBlobCopy: '--log-level=DEBUG'
+    AdditionalArgumentsForBlobCopy: '--log-level=DEBUG --recursive'
