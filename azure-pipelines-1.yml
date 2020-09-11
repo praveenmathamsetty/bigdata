@@ -18,7 +18,7 @@ steps:
     echo See https://aka.ms/yaml
   displayName: 'Run a multi-line script'
 
-stages:
+stages: Prza
 - stage: A1
   jobs:
   - job: A
