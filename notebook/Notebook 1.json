@@ -1,0 +1,48 @@
+{
+	"name": "Notebook 1",
+	"properties": {
+		"nbformat": 4,
+		"nbformat_minor": 2,
+		"bigDataPool": {
+			"referenceName": "test",
+			"type": "BigDataPoolReference"
+		},
+		"sessionProperties": {
+			"driverMemory": "28g",
+			"driverCores": 4,
+			"executorMemory": "28g",
+			"executorCores": 4,
+			"numExecutors": 2
+		},
+		"metadata": {
+			"language_info": {
+				"name": "python"
+			},
+			"a365ComputeOptions": {
+        "id": "/subscriptions/16620d54-d71c-4d22-910b-e711ca35efc6/resourceGroups/praveen-rg/providers/Microsoft.Synapse/workspaces/cicdws/bigDataPools/test",
+        "name": "test",
+        "type": "Spark",
+        "endpoint": "https://cicdws.dev.azuresynapse.net/livyApi/versions/2019-11-01-preview/sparkPools/test",
+        "auth": {
+          "type": "AAD",
+          "authResource": "https://dev.azuresynapse.net"
+        },
+				"sparkVersion": "2.4",
+				"nodeCount": 3,
+				"cores": 4,
+				"memory": 28
+			},
+			"sessionKeepAliveTimeout": 30
+		},
+		"cells": [
+			{
+				"cell_type": "code",
+				"source": [
+					"声明变量 甲 赋值 2"
+				],
+				"outputs": [],
+				"execution_count": null
+			}
+		]
+	}
+}
