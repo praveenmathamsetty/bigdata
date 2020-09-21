@@ -1,5 +1,5 @@
 {
-  "name": "Notebook 3",
+  "name": "Notebook 1",
   "properties": {
     "nbformat": 4,
     "nbformat_minor": 2,
@@ -35,6 +35,17 @@
       },
       "sessionKeepAliveTimeout": 30
     },
-    "cells": []
+    "cells": [
+      {
+        "cell_type": "code",
+        "metadata": {},
+        "source": [
+          "2+1"
+        ],
+        "attachments": {},
+        "outputs": [],
+        "execution_count": null
+      }
+    ]
   }
 }
