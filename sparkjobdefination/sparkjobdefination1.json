@@ -1,0 +1,24 @@
+{
+  "name": "Spark job definition 1",
+  "properties": {
+    "targetBigDataPool": {
+      "referenceName": "test",
+      "type": "BigDataPoolReference"
+    },
+    "requiredSparkVersion": "2.4",
+    "language": "python",
+    "jobProperties": {
+      "name": "Spark job definition 1",
+      "file": "abfss://praveensg2@praveensg2.dfs.core.windows.net/synapse/workspaces/cicdws/batchjobs/Spark%20job%20definition%201/wordcount.py",
+      "conf": {},
+      "args": [],
+      "jars": [],
+      "files": [],
+      "driverMemory": "28g",
+      "driverCores": 4,
+      "executorMemory": "28g",
+      "executorCores": 4,
+      "numExecutors": 2
+    }
+  }
+}
