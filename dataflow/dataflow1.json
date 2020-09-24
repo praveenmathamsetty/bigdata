@@ -1,0 +1,28 @@
+{
+	"name": "dataflow1",
+	"properties": {
+		"type": "MappingDataFlow",
+		"typeProperties": {
+			"sources": [
+				{
+					"dataset": {
+						"referenceName": "DimConsumptionEngagementSrc",
+						"type": "DatasetReference"
+					},
+					"name": "DimConsumptionEngagementSrc"
+				}
+			],
+			"sinks": [
+				{
+					"dataset": {
+						"referenceName": "DelimitedText7",
+						"type": "DatasetReference"
+					},
+					"name": "sink1"
+				}
+			],
+			"transformations": [],
+			"script": "\n\nsource(output(\n\t\tEngagementKey as integer,\n\t\tEngagementId as string,\n\t\tAccountId as string,\n\t\tAgreedToValue as boolean,\n\t\tCaptureSuccessMeasures as boolean,\n\t\tengagementstatus as string,\n\t\tEstCompletionDate as timestamp,\n\t\tEstStartDate as timestamp,\n\t\tIdentifyFutureLeads as boolean,\n\t\tmcsinvolved as string,\n\t\tEngagementName as string,\n\t\tNextSteps as string,\n\t\tOriginatingOpportunity as string,\n\t\tPartnerAccountId as string,\n\t\tProductId as string,\n\t\tRelatedOpportunity as string,\n\t\tSummary as string,\n\t\tValidateInitialUsage as boolean,\n\t\tworkload as string,\n\t\tWorkloadsActivated as boolean,\n\t\tworkloadtype as string,\n\t\tOwnerId as string,\n\t\tOdsStatus as byte,\n\t\tVersionNumber as long,\n\t\tengstatus as string,\n\t\tstatecode as integer,\n\t\tStatus as string,\n\t\tTransactionCurrencyId as string,\n\t\tPrimaryCustomerJobTitle as string,\n\t\tPrimaryCustomerJobRole as string,\n\t\tMarketingAudience as string,\n\t\tInfluenceLevel as string,\n\t\tsolutionareaCode as integer,\n\t\tSCDStartDate as timestamp,\n\t\tSCDEndDate as timestamp,\n\t\tPlatformStatus as integer,\n\t\tEngagementNumber as string,\n\t\thealthcomments as string,\n\t\tlineofbusinessdivisionSeqNo as string,\n\t\tpreferredazureregionSeqNo as string,\n\t\tsolutionareaSeqNo as long,\n\t\tpreferredazureregion as string,\n\t\tcompetethreatlevel as string,\n\t\tprimarycompetitor as string,\n\t\tPlatformCreatedDate as timestamp,\n\t\tPlatformModifiedDate as timestamp,\n\t\tothercompetitor as string,\n\t\tMsServicesInvolved as string,\n\t\tOwnerAlias as string,\n\t\tOwnerFirstName as string,\n\t\tOwnerLastName as string,\n\t\tPartnerReferral as string,\n\t\tEngagementHKey as long,\n\t\tPlatformModifiedDateAsInt as long,\n\t\tCreatedDate as timestamp,\n\t\tCreatedBy as string,\n\t\tModifiedDate as timestamp,\n\t\tModifiedBy as string,\n\t\tengagementhealth as string,\n\t\tads as string,\n\t\tagreetothedeploymentplan as string,\n\t\tassesstechnicalblockers as string,\n\t\tbdmworkshop as string,\n\t\tbuildadoptionchange as string,\n\t\tBuildTeamsAdoptionPlan as boolean,\n\t\tchangemanagementapproach as string,\n\t\tcommitmentformvp as string,\n\t\tCompleteCSSP as boolean,\n\t\tconductsuccessclinic as string,\n\t\tcustomerimmersionexperience as string,\n\t\tcustomertechnicalreadinessplan as string,\n\t\tdigitaltraining as string,\n\t\tdjsadoptionmonitoring as string,\n\t\tdjsbusinessoutcomes as string,\n\t\tdjscomplexityassessement as string,\n\t\tdjsjourneyprogress as string,\n\t\tdjsorgmaturityassessment as string,\n\t\tdjssolutionoptimization as string,\n\t\tDJSSponsorshipMap as boolean,\n\t\tendusertraining as string,\n\t\tengageadoptionchangemanagementpartners as string,\n\t\tEngagementScore as integer,\n\t\tengageservicespartners as string,\n\t\testablishbusinessgovernancecadence as string,\n\t\tevaluationcompetestrategy as string,\n\t\texcitementdays as string,\n\t\tidentifybudget as string,\n\t\tIntentidentified as boolean,\n\t\tintroducechangemanagement as string,\n\t\tlandskypetoteamsmigration as string,\n\t\tlineofbusinessdivision as string,\n\t\tmonitoringandoptimization as string,\n\t\tmvptoproduction as string,\n\t\tObjectivesmet as boolean,\n\t\tofficeofcxo as string,\n\t\toptimizationrecommendations as string,\n\t\torganizationalreadinessassessment as string,\n\t\tproductiongradecapabilities as string,\n\t\tprojectimplementation as string,\n\t\tremediatetechnicalblockers as string,\n\t\tshowcase as string,\n\t\tStatusReason as string,\n\t\tteamspoc as string,\n\t\ttechbriefing as string,\n\t\ttechnicalonboarding as string,\n\t\tunderstandtechnicalpriorities as string,\n\t\tvaluediscoveryworkshop as string,\n\t\twintechnicaldecision as string,\n\t\tBusinessProcessName as string,\n\t\tBusinessProcessId as string,\n\t\tProcessStageName as string,\n\t\tProcessStageId as string\n\t),\n\tallowSchemaDrift: true,\n\tvalidateSchema: false,\n\tformat: 'parquet') ~> DimConsumptionEngagementSrc\nDimConsumptionEngagementSrc sink(input(\n\t\tColumn_1 as string,\n\t\tColumn_2 as string,\n\t\tColumn_3 as string,\n\t\tColumn_4 as string,\n\t\tColumn_5 as string,\n\t\tColumn_6 as string,\n\t\tColumn_7 as string,\n\t\tColumn_8 as string\n\t),\n\tallowSchemaDrift: true,\n\tvalidateSchema: false) ~> sink1"
+		}
+	}
+}
