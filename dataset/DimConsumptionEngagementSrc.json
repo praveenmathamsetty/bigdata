@@ -1,0 +1,469 @@
+{
+	"name": "DimConsumptionEngagementSrc",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "smdpprdadlsgen2_new",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"folderPath": "publish/product/consumptionengagement/dimconsumptionengagement/full",
+				"fileSystem": "smdp"
+			},
+			"compressionCodec": "snappy"
+		},
+		"schema": [
+			{
+				"name": "EngagementKey",
+				"type": "INT32"
+			},
+			{
+				"name": "EngagementId",
+				"type": "UTF8"
+			},
+			{
+				"name": "AccountId",
+				"type": "UTF8"
+			},
+			{
+				"name": "AgreedToValue",
+				"type": "BOOLEAN"
+			},
+			{
+				"name": "CaptureSuccessMeasures",
+				"type": "BOOLEAN"
+			},
+			{
+				"name": "engagementstatus",
+				"type": "UTF8"
+			},
+			{
+				"name": "EstCompletionDate",
+				"type": "INT96"
+			},
+			{
+				"name": "EstStartDate",
+				"type": "INT96"
+			},
+			{
+				"name": "IdentifyFutureLeads",
+				"type": "BOOLEAN"
+			},
+			{
+				"name": "mcsinvolved",
+				"type": "UTF8"
+			},
+			{
+				"name": "EngagementName",
+				"type": "UTF8"
+			},
+			{
+				"name": "NextSteps",
+				"type": "UTF8"
+			},
+			{
+				"name": "OriginatingOpportunity",
+				"type": "UTF8"
+			},
+			{
+				"name": "PartnerAccountId",
+				"type": "UTF8"
+			},
+			{
+				"name": "ProductId",
+				"type": "UTF8"
+			},
+			{
+				"name": "RelatedOpportunity",
+				"type": "UTF8"
+			},
+			{
+				"name": "Summary",
+				"type": "UTF8"
+			},
+			{
+				"name": "ValidateInitialUsage",
+				"type": "BOOLEAN"
+			},
+			{
+				"name": "workload",
+				"type": "UTF8"
+			},
+			{
+				"name": "WorkloadsActivated",
+				"type": "BOOLEAN"
+			},
+			{
+				"name": "workloadtype",
+				"type": "UTF8"
+			},
+			{
+				"name": "OwnerId",
+				"type": "UTF8"
+			},
+			{
+				"name": "OdsStatus",
+				"type": "INT_8"
+			},
+			{
+				"name": "VersionNumber",
+				"type": "INT64"
+			},
+			{
+				"name": "engstatus",
+				"type": "UTF8"
+			},
+			{
+				"name": "statecode",
+				"type": "INT32"
+			},
+			{
+				"name": "Status",
+				"type": "UTF8"
+			},
+			{
+				"name": "TransactionCurrencyId",
+				"type": "UTF8"
+			},
+			{
+				"name": "PrimaryCustomerJobTitle",
+				"type": "UTF8"
+			},
+			{
+				"name": "PrimaryCustomerJobRole",
+				"type": "UTF8"
+			},
+			{
+				"name": "MarketingAudience",
+				"type": "UTF8"
+			},
+			{
+				"name": "InfluenceLevel",
+				"type": "UTF8"
+			},
+			{
+				"name": "solutionareaCode",
+				"type": "INT32"
+			},
+			{
+				"name": "SCDStartDate",
+				"type": "INT96"
+			},
+			{
+				"name": "SCDEndDate",
+				"type": "INT96"
+			},
+			{
+				"name": "PlatformStatus",
+				"type": "INT32"
+			},
+			{
+				"name": "EngagementNumber",
+				"type": "UTF8"
+			},
+			{
+				"name": "healthcomments",
+				"type": "UTF8"
+			},
+			{
+				"name": "lineofbusinessdivisionSeqNo",
+				"type": "UTF8"
+			},
+			{
+				"name": "preferredazureregionSeqNo",
+				"type": "UTF8"
+			},
+			{
+				"name": "solutionareaSeqNo",
+				"type": "INT64"
+			},
+			{
+				"name": "preferredazureregion",
+				"type": "UTF8"
+			},
+			{
+				"name": "competethreatlevel",
+				"type": "UTF8"
+			},
+			{
+				"name": "primarycompetitor",
+				"type": "UTF8"
+			},
+			{
+				"name": "PlatformCreatedDate",
+				"type": "INT96"
+			},
+			{
+				"name": "PlatformModifiedDate",
+				"type": "INT96"
+			},
+			{
+				"name": "othercompetitor",
+				"type": "UTF8"
+			},
+			{
+				"name": "MsServicesInvolved",
+				"type": "UTF8"
+			},
+			{
+				"name": "OwnerAlias",
+				"type": "UTF8"
+			},
+			{
+				"name": "OwnerFirstName",
+				"type": "UTF8"
+			},
+			{
+				"name": "OwnerLastName",
+				"type": "UTF8"
+			},
+			{
+				"name": "PartnerReferral",
+				"type": "UTF8"
+			},
+			{
+				"name": "EngagementHKey",
+				"type": "INT64"
+			},
+			{
+				"name": "PlatformModifiedDateAsInt",
+				"type": "INT64"
+			},
+			{
+				"name": "CreatedDate",
+				"type": "INT96"
+			},
+			{
+				"name": "CreatedBy",
+				"type": "UTF8"
+			},
+			{
+				"name": "ModifiedDate",
+				"type": "INT96"
+			},
+			{
+				"name": "ModifiedBy",
+				"type": "UTF8"
+			},
+			{
+				"name": "engagementhealth",
+				"type": "UTF8"
+			},
+			{
+				"name": "ads",
+				"type": "UTF8"
+			},
+			{
+				"name": "agreetothedeploymentplan",
+				"type": "UTF8"
+			},
+			{
+				"name": "assesstechnicalblockers",
+				"type": "UTF8"
+			},
+			{
+				"name": "bdmworkshop",
+				"type": "UTF8"
+			},
+			{
+				"name": "buildadoptionchange",
+				"type": "UTF8"
+			},
+			{
+				"name": "BuildTeamsAdoptionPlan",
+				"type": "BOOLEAN"
+			},
+			{
+				"name": "changemanagementapproach",
+				"type": "UTF8"
+			},
+			{
+				"name": "commitmentformvp",
+				"type": "UTF8"
+			},
+			{
+				"name": "CompleteCSSP",
+				"type": "BOOLEAN"
+			},
+			{
+				"name": "conductsuccessclinic",
+				"type": "UTF8"
+			},
+			{
+				"name": "customerimmersionexperience",
+				"type": "UTF8"
+			},
+			{
+				"name": "customertechnicalreadinessplan",
+				"type": "UTF8"
+			},
+			{
+				"name": "digitaltraining",
+				"type": "UTF8"
+			},
+			{
+				"name": "djsadoptionmonitoring",
+				"type": "UTF8"
+			},
+			{
+				"name": "djsbusinessoutcomes",
+				"type": "UTF8"
+			},
+			{
+				"name": "djscomplexityassessement",
+				"type": "UTF8"
+			},
+			{
+				"name": "djsjourneyprogress",
+				"type": "UTF8"
+			},
+			{
+				"name": "djsorgmaturityassessment",
+				"type": "UTF8"
+			},
+			{
+				"name": "djssolutionoptimization",
+				"type": "UTF8"
+			},
+			{
+				"name": "DJSSponsorshipMap",
+				"type": "BOOLEAN"
+			},
+			{
+				"name": "endusertraining",
+				"type": "UTF8"
+			},
+			{
+				"name": "engageadoptionchangemanagementpartners",
+				"type": "UTF8"
+			},
+			{
+				"name": "EngagementScore",
+				"type": "INT32"
+			},
+			{
+				"name": "engageservicespartners",
+				"type": "UTF8"
+			},
+			{
+				"name": "establishbusinessgovernancecadence",
+				"type": "UTF8"
+			},
+			{
+				"name": "evaluationcompetestrategy",
+				"type": "UTF8"
+			},
+			{
+				"name": "excitementdays",
+				"type": "UTF8"
+			},
+			{
+				"name": "identifybudget",
+				"type": "UTF8"
+			},
+			{
+				"name": "Intentidentified",
+				"type": "BOOLEAN"
+			},
+			{
+				"name": "introducechangemanagement",
+				"type": "UTF8"
+			},
+			{
+				"name": "landskypetoteamsmigration",
+				"type": "UTF8"
+			},
+			{
+				"name": "lineofbusinessdivision",
+				"type": "UTF8"
+			},
+			{
+				"name": "monitoringandoptimization",
+				"type": "UTF8"
+			},
+			{
+				"name": "mvptoproduction",
+				"type": "UTF8"
+			},
+			{
+				"name": "Objectivesmet",
+				"type": "BOOLEAN"
+			},
+			{
+				"name": "officeofcxo",
+				"type": "UTF8"
+			},
+			{
+				"name": "optimizationrecommendations",
+				"type": "UTF8"
+			},
+			{
+				"name": "organizationalreadinessassessment",
+				"type": "UTF8"
+			},
+			{
+				"name": "productiongradecapabilities",
+				"type": "UTF8"
+			},
+			{
+				"name": "projectimplementation",
+				"type": "UTF8"
+			},
+			{
+				"name": "remediatetechnicalblockers",
+				"type": "UTF8"
+			},
+			{
+				"name": "showcase",
+				"type": "UTF8"
+			},
+			{
+				"name": "StatusReason",
+				"type": "UTF8"
+			},
+			{
+				"name": "teamspoc",
+				"type": "UTF8"
+			},
+			{
+				"name": "techbriefing",
+				"type": "UTF8"
+			},
+			{
+				"name": "technicalonboarding",
+				"type": "UTF8"
+			},
+			{
+				"name": "understandtechnicalpriorities",
+				"type": "UTF8"
+			},
+			{
+				"name": "valuediscoveryworkshop",
+				"type": "UTF8"
+			},
+			{
+				"name": "wintechnicaldecision",
+				"type": "UTF8"
+			},
+			{
+				"name": "BusinessProcessName",
+				"type": "UTF8"
+			},
+			{
+				"name": "BusinessProcessId",
+				"type": "UTF8"
+			},
+			{
+				"name": "ProcessStageName",
+				"type": "UTF8"
+			},
+			{
+				"name": "ProcessStageId",
+				"type": "UTF8"
+			}
+		]
+	}
+}
