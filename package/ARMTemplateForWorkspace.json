@@ -368,7 +368,6 @@
 					"type": "BigDataPoolReference"
 				},
 				"requiredSparkVersion": "2.4",
-				"abc": "/subscriptions/1e42591f-1f0c-4c5a-b7f2-a268f6105ec5/resourceGroups/xltest/providers/Microsoft.Synapse/workspaces/xltestscus/bigDataPools/xpool",
 				"language": "scala",
 				"jobProperties": {
 					"name": "Spark job definition 1",
@@ -393,7 +392,6 @@
 		},
 		{
 			"name": "[concat(parameters('workspaceName'), '/default')]",
-			"xyz": "/subscriptions/1e42591f-1f0c-4c5a-b7f2-a268f6105ec5/resourceGroups/xltest/providers/Microsoft.Synapse/workspaces/xltestscus/bigDataPools/xpool",
 			"type": "Microsoft.Synapse/workspaces/managedVirtualNetworks",
 			"apiVersion": "2019-06-01-preview",
 			"properties": {},
